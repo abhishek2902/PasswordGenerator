@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Generator</title>
+    <link rel="stylesheet" href="style.css">
+    <script
+      src="https://kit.fontawesome.com/7a4b62b0a4.js"
+      crossorigin="anonymous"
+    ></script>
+</head>
+
+<body>
+    <div class="container">
+        <h3><i class="fa fa-lock" style="color: red"> </i> Password Generator</h3>
+        <p id="dis"></p>
+        <form id="form">
+            <div class="length">
+                <label id="rangelbl" for="length">Password Length 8</label>
+                <input id="range" value="8" type="range" name="length" min="0" max="20" >
+            </div>
+
+            <div class="checkboxes">
+                <div class="checkbox">
+                    <label for="uppercase">Include uppercase</label>
+                <input id="cb1" type="checkbox" name="uppercase" value="1">
+                </div>
+                <div class="checkbox">
+                    <label for="number">Include number</label>
+                <input id="cb2" type="checkbox" name="number" value="2">
+                </div>
+                <div class="checkbox">
+                    <label for="symbol">Include symbols</label>
+                <input id="cb3" type="checkbox" name="symbol" value="3">
+                </div>
+            </div>
+            <button id="btn" type="submit">Generate Password</button>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
